@@ -20,7 +20,7 @@ $result = mysqli_query($conn,$query) or die(/*mysql_error()*/);
   $rows = mysqli_num_rows($result);
   if($rows==1){
       $_SESSION['username'] = $username;
-      header("Location: index.php");
+      header("Location: accueil_client.php");
   }else{
     $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
   }
